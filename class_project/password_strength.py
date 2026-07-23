@@ -9,7 +9,7 @@ project : password strngth checker
 6. display password strength result
 '''
 
-
+#check the paswword strength
 passw=input("enter a password = ")
 if passw =="":
     print("password cannot be empty")
