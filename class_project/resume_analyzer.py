@@ -26,3 +26,18 @@ for skill in skills:
         matched_skills.append(skill)
     else:
         missing_skills.append(skill)
+# calculate match percentage
+match_percentage=(len(matched_skills)/len(skills))*100
+print(Fore.CYAN+"\n!------------------------Resume Analysis Result------------------------!\n"+Style.RESET_ALL)
+print(Fore.LIGHTGREEN_EX+"Matched Skills :"+Style.RESET_ALL)
+for skill in matched_skills:
+    print("-",skill)
+    
+#missing skill
+print(Fore.RED+"Missing Skill :"+Style.RESET_ALL)
+for skill in missing_skills:
+    print("-",skill)
+    
+#percentages        
+print(Fore.GREEN+f"Match Percentage: {match_percentage:.2f}%"+Style.RESET_ALL)
+        
