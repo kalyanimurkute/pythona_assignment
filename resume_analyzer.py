@@ -14,3 +14,4 @@ o	JavaScript
 •	Show missing skills 
 •	Suggest improvements
 '''
+resume=input("Enter the resume text: ")
