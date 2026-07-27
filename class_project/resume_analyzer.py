@@ -40,4 +40,13 @@ for skill in missing_skills:
     
 #percentages        
 print(Fore.GREEN+f"Match Percentage: {match_percentage:.2f}%"+Style.RESET_ALL)
-        
+ 
+#suggestions
+print(Fore.GREEN+"suggection :"+Style.RESET_ALL) 
+if len(missing_skills)==0:
+    print(Fore.GREEN+"your resume required all skills."+Style.RESET_ALL)
+else:
+    print(Fore.RED+"Add the following skills :"+Style.RESET_ALL)
+    for skill in missing_skills:
+        print("-",skill)    
+          
